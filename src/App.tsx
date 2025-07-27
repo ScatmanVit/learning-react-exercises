@@ -1,10 +1,10 @@
-import AddWordList from './practice/useState/addWordList.tsx'
+import Count from './practice/useState/count.tsx'
 
 
 function App() {
   return (
     <>
-       <AddWordList />
+       <Count />
     </>
   )
 }
