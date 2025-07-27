@@ -22,7 +22,7 @@ export default function ChangeBgColor() {
             gap: 4
          }}
       >
-         <h1>Selecione a cor que quiser ou escolha um dos botões!</h1>
+         <h1>Selecione a cor que quiser</h1>
          <select value={theme} onChange={changeColor}>
             {colors.map((color, index) => {
                return (
