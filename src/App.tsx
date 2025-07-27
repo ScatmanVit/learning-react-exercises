@@ -1,4 +1,4 @@
-import ChangeBgColor from './practice/useState/changeBgColor.tsx'
+import ChangeBgColor from './practice/useState/changeBgColor/changeBgColor.tsx'
 
 
 function App() {
