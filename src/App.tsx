@@ -1,10 +1,10 @@
-import CountWithLimited from './practice/useState/countWithLimit.tsx'
+import ChangeBgColor from './practice/useState/changeBgColor.tsx'
 
 
 function App() {
   return (
     <>
-        <CountWithLimited/>
+        <ChangeBgColor/>
     </>
   )
 }
