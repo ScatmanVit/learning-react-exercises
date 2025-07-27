@@ -1,10 +1,10 @@
-import Count from './practice/useState/count.tsx'
+import CountWithLimited from './practice/useState/countWithLimit.tsx'
 
 
 function App() {
   return (
     <>
-       <Count />
+        <CountWithLimited/>
     </>
   )
 }
