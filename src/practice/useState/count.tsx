@@ -35,3 +35,10 @@ export default function Count() {
 
 // sempre que o uso do onChange for inline deve se passar o e na arrow function como parametro, SEMPRE
 // um input sempre retorna string, mesmo que o tipo dele seja number
+/* 
+no react o onchange sempre passa a propriedade e, e aqui se torna obrigatório acessá-la porque contém o valor fo input dentro dela .
+mas em um onclick não se faz necessário caso não queira alguma propriedade do onclick, como o preventDefault()
+que exige o e
+
+   e.preventDefualt()
+*/
