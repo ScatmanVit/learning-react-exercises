@@ -64,7 +64,7 @@ export default function ChangeBgColor() {
                )
             })}
          </select>
-         <button onClick={() => setTheme("")}>Resetar Cor</button>   
+         <button onClick={() => document.body.style.backgroundColor = ""}>Resetar Cor</button>   
       </div>
       </>
    )
