@@ -1,19 +1,53 @@
-import { useEffect, useState, type ChangeEvent } from 'react'
+import { /*useEffect,*/ useState, type ChangeEvent } from 'react'
 import { colors } from './colors'
 
 export default function ChangeBgColor() {
    const [theme, setTheme] = useState<string>("")
 
+   
+   /* Usando o useState apenas*/
    function changeColor(e: ChangeEvent<HTMLSelectElement>) {
-      setTheme(e.target.value)
+      const newTheme = e.target.value
+      setTheme(newTheme) // useState é assíncrono, por isso ao invés de passar o estado como tema, passei a váriavel criada na função
+      document.body.style.backgroundColor = newTheme;
+      
    }
+   
+   /* Usando o useEffect */
+   // function changeColorWithEffect(e: ChangeEvent<HTMLSelectElement>) {
+   //    setTheme(e.target.value)
+   // }
+   
+   // useEffect(() => {
+   // document.body.style.backgroundColor = theme;
+   // console.log("Mudou!")
+   // }, [theme])
 
-   useEffect(() => {
-      document.body.style.backgroundColor = theme;
-      console.log("Mudou!")
-   }, [theme])
+
 
    return (
+      <> 
+      {/*Usando useState e useEffect */}
+          <div style={{ 
+            display: "flex",
+            flexDirection: "column", 
+            justifyContent: "center", 
+            alignItems: "center",
+            gap: 4
+         }}
+      >
+         <h1>Selecione a cor que quiser com useState e useEffect</h1>
+         <select value={theme} /*onChange={changeColorWithEffect}*/>
+            {colors.map((color, index) => {
+               return (
+                  <option key={index} value={color}>{color}</option>
+               )
+            })}
+         </select>
+         <button onClick={() => setTheme("")}>Resetar Cor</button>   
+      </div>
+
+      {/*Usando useState apenas */}
       <div style={{ 
             display: "flex",
             flexDirection: "column", 
@@ -22,7 +56,7 @@ export default function ChangeBgColor() {
             gap: 4
          }}
       >
-         <h1>Selecione a cor que quiser</h1>
+         <h1>Selecione a cor que quiser com useState</h1>
          <select value={theme} onChange={changeColor}>
             {colors.map((color, index) => {
                return (
@@ -32,8 +66,10 @@ export default function ChangeBgColor() {
          </select>
          <button onClick={() => setTheme("")}>Resetar Cor</button>   
       </div>
+      </>
    )
 }
+
 
 /* Notas: */
 /*
