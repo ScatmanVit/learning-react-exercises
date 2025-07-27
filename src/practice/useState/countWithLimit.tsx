@@ -32,3 +32,11 @@ export default function CountWithLimited() {
       </div>
    )
 }
+
+/* Notas: */
+
+/* disabled por padrão é false, e se for adcionado sem parametro é true, 
+porém ele pode receber parâmetro condicional, assim: 
+
+   disabled={count === 10}
+*/
