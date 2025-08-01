@@ -52,6 +52,7 @@ export default function ListPostsUseEffect() {
       <button onClick={() => setQuant(viewAmount)}>
          Carregar
       </button>
+
       {loading ? "Carregando..."
        : posts.slice(0, quant).map((post, index) => (
          <Post 
@@ -71,4 +72,5 @@ export default function ListPostsUseEffect() {
 
    O loading bugava porque eu não colocava ele como true antes do timeout.  
    Então o useEffect rodava e ele já tava false, aí nem parecia que tava carregando.
+   O react não atualiza estado após re-rendenização da tela, tenho que fazer isso manualmente, isso que estava causando o loop do loading.
 */
