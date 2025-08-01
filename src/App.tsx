@@ -1,10 +1,10 @@
-import ListPostsUseEffect from "./practice/useEffect/listPosts"
+import Timer from "./practice/useEffect/timer"
 
 
 function App() {
   return (
     <>
-        <ListPostsUseEffect/>
+        <Timer/>
     </>
   )
 }
