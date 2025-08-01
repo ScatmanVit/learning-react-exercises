@@ -1,10 +1,10 @@
-import ChangeBgColor from './practice/useState/changeBgColor/changeBgColor.tsx'
+import ListPostsUseEffect from "./practice/useEffect/listPosts"
 
 
 function App() {
   return (
     <>
-        <ChangeBgColor/>
+        <ListPostsUseEffect/>
     </>
   )
 }

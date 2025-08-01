@@ -1,1 +1,0 @@
-// Aqui irei criar o component de listagem para mostrar o itens na practice de useEffect

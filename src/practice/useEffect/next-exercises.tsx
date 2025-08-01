@@ -8,8 +8,8 @@
 
 // 🧩 Extras:
 // ✅ Adicione um botão para buscar os próximos 10 (paginação falsa)
-// ✅ Mostre um spinner (Carregando...) enquanto os dados não chegam
-
+// ✅ Mostre um spinner (Carregando...) enquanto os dados não chegam)
+// ------ FEITO -------
 
 
 // 🕒 Exercício 2 – Timer com Start/Pause/Reset
