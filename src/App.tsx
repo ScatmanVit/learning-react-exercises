@@ -1,10 +1,10 @@
-import Timer from "./practice/useEffect/timer"
+import ScreenCount from "./practice/useEffect/screenCount"
 
 
 function App() {
   return (
     <>
-        <Timer/>
+        <ScreenCount/>
     </>
   )
 }
