@@ -1,10 +1,10 @@
-import ScreenCount from "./practice/useEffect/screenCount"
+import SearchUser from "./practice/useEffect/searchUser"
 
 
 function App() {
   return (
     <>
-        <ScreenCount/>
+        <SearchUser/>
     </>
   )
 }
