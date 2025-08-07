@@ -101,3 +101,4 @@ value = pra salvar o texto do input no idToSerch pra pesquisa,
 idToSearch = pra ser usado como dependencia no useEffect e evitar re-rendenização
    além de ser usado para condicionar a requisição na api
 */
+
